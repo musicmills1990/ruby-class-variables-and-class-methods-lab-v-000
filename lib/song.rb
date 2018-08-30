@@ -35,9 +35,7 @@ end
 
 
 def self.artist_count
-  @@artist_count.collect do |artist, count|
-    #same notes as what I wrote below about genre_count.
-  end
+  @@artist_count
 end
 
 
