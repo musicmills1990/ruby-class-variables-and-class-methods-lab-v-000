@@ -17,6 +17,8 @@ def initialize(name, artist, genre)
   @@count += 1
   @@artists << @artist
   @@genres << @genre
+  @@artist_count = {:@@artists => @@artists.count}
+  @@genre_count = {:@@genres => @@genres.count}
 end
 
 def self.count
@@ -33,7 +35,7 @@ end
 
 
 def self.artist_count
-  @@artist_count.each do |artist, count|
+  @@artist_count.collect do |artist, count|
     #same notes as what I wrote below about genre_count.
   end
 end
@@ -41,7 +43,7 @@ end
 
 def self.genre_count
   @@genre_count.collect do |genre, count|
-    #something to include each genre key and start with a count of 1, then if there are multiple "key => 1"s,
+    #something to include each genre key and start with a count/value of 1, then if there are multiple "key => 1"s,
     #combine them together to make the count go to 2...
     end
   end
