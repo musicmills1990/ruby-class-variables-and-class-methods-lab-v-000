@@ -42,7 +42,7 @@ end
 
 
 def self.genre_count
-  @@genre_count.collect do |genre, count|
+  @@genre_count
     #something to include each genre key and start with a count/value of 1, then if there are multiple "key => 1"s,
     #combine them together to make the count go to 2...
     end
