@@ -33,13 +33,16 @@ end
 
 
 def self.artist_count
-  binding.pry
-  @@artist_count
+  @@artist_count.each do |artist, count|
+    #same notes as what I wrote below about genre_count.
+  end
 end
 
 
 def self.genre_count
-  @@genre_count
+  @@genre_count.each do |genre, count|
+    #something to include each genre key and start with a count of 1, then if there are multiple "key => 1"s,
+    #combine them together to make the count go to 2...
 end
 
 end
