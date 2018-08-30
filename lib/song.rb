@@ -34,6 +34,7 @@ end
 
 
 def self.artist_count
+  binding.pry
   @@artist_count
 end
 
