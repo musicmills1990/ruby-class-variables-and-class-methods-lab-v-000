@@ -2,6 +2,12 @@ require 'pry'
 
 class Song
 
+  @@count = 0
+  @@artists = []
+  @@genres = []
+  @@artist_count = {:@artist => @@count}
+  @@genre_count = {:@genre => @@count}
+
 attr_accessor :name, :artist, :genre
 
 def initialize(name, artist, genre)
@@ -13,18 +19,24 @@ def initialize(name, artist, genre)
   @@genres << @genre
 end
 
-@@count = 0
-@@artists = []
-@@genres = []
-@@artist_count = {:@artist => @@count}
-@@genre_count = {:@genre => @@count}
 def self.count
   @@count
 end
 
+def self.artists
+  @@artists.uniq
+end
 
 def self.genres
   return @@genres
+end
+
+
+def self.artist_count
+end
+
+
+def self.genre_count
 end
 
 end
