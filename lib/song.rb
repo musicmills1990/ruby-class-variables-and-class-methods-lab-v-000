@@ -41,6 +41,7 @@ def self.artist_count
       artist_count[artist] = 1
     end
   end
+  return artist_count
 end
 
 
